@@ -1,0 +1,19 @@
+li
+{
+    font-size: 20px;
+}
+
+.info
+{
+    position: absolute;
+    top: 190px;
+    left: 350px;
+    width: 700px
+}
+
+ 
+body
+{
+background-color: CDFFFF;
+color: 3C0014;
+}

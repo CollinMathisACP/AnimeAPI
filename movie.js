@@ -20,9 +20,10 @@ var printTitles = function(movieData)
 var printData = function(movie)
 {
     d3.select(".data *").remove("ul");
-    d3.select(".data").append("ul").attr("class", "info");
-    d3.select(".info").append("li").text(movie.title);
-    d3.select(".info").append("li").text(movie.description);
+    d3.select(".data").append("div").attr("class", "info");
+    d3.select(".info").append("ul").attr("class", "infoList");
+    d3.select(".infoList").append("li").text(movie.title);
+    d3.select(".infoList").append("li").text(movie.description);
 }
 
 moviePromise.then(
